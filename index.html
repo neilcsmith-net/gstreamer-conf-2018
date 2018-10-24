@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>Praxis LIVE</title>
+    <title>PraxisLIVE</title>
 
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/black.css">
@@ -14,29 +14,29 @@
 
     <style>
       body {
-        background-color: #111;
+          background-color: #111;
       }
       footer {
-        position: absolute;
-        bottom: 5px;
-        left: 5px;
-        z-index: 100;
+          position: absolute;
+          bottom: 5px;
+          left: 5px;
+          z-index: 100;
       }
       .reveal section img {
-        background: none;
-        border: none;
-        box-shadow: none;
-        max-height: 90vh;
+          background: none;
+          border: none;
+          box-shadow: none;
+          max-height: 90vh;
       }
       .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
-        font-weight: normal;
-        text-transform: none;
+          font-weight: normal;
+          text-transform: none;
       }
       .reveal pre {
-        width: auto;
+          width: auto;
       }
       .reveal {
-        font-size: 38px;
+          font-size: 38px;
       }
     </style>
 
@@ -54,8 +54,7 @@
     <div class="reveal">
       <div class="slides">
         <section>
-          <h2>Praxis LIVE</h2>
-          <p><em>open-source hybrid visual IDE for live creative coding</em></p>
+          <h2>PraxisLIVE, PraxisCORE<br>and the<br>Java bindings for GStreamer</h2>
         </section>
 
         <section>
@@ -71,9 +70,9 @@
           <section>
             <p>Now, freelancing related to open-source Java technologies</p>
             <ul>
-              <li>Praxis LIVE - hybrid visual IDE for live creative coding</li>
+              <li>PraxisLIVE - hybrid visual IDE for live creative coding</li>
               <li>GStreamer 1.x bindings</li>
-              <li>JAudioLibs - audio utilities (inc. JNAJack)</li>
+              <li>JAudioLibs - audio utilities (inc. JACK bindings)</li>
               <li>Apache NetBeans</li>
             </ul>
           </section>
@@ -95,16 +94,23 @@
 
         <section>
           <section>
+            <h2>PraxisLIVE &amp; PraxisCORE</h2>
+          </section>
+          <section>
             <p>hybrid visual IDE for (live) creative coding</p>
+          </section>
+          <section data-background-image="assets/PL4-rc.png" data-background-transition="zoom"></section>
+          <section>
+            <p>easily create projections, interactive spaces, custom VJ tools, sonic instruments, creative IoT</p>
+            <p>use it as a live digital sketchbook, test out ideas, experiment with code</p>
           </section>
           <section>
             <p>hybrid visual IDE <em>and runtime</em> for (live) creative coding</p>
           </section>
           <section>
-            <p>easily create projections, interactive spaces, custom VJ tools, sonic instruments, creative IoT</p>
-            <p>use it as a live digital sketchbook, test out ideas, experiment with code</p>
+            <p>PraxisCORE brings aspects of Erlang, Smalltalk and Extempore into the Java world ... </p>
+            <p>a powerful platform for media processing, data visualisation, sensors, robotics, IoT, and lots more! </p>
           </section>
-          <section data-background-image="assets/PL4-rc.png" data-background-transition="zoom"></section>
           <section>
             <h2>Key features</h2>
             <ul>
@@ -136,23 +142,23 @@
           <section>
             <h2>History</h2>
             <div class="fragment">
-              <h3>Praxis LIVE v1 (2011)</h3>
-              <p>Custom OpenGL pipeline, limited coding components</p>
+              <h3>PraxisLIVE v1 (2011)</h3>
+              <p>Custom OpenGL pipeline, GStreamer 0.10, limited coding components</p>
             </div>
             <div class="fragment">
-              <h3>Praxis LIVE v2 (2015)</h3>
+              <h3>PraxisLIVE v2 (2015)</h3>
               <p>Major rewrite, Processing included,<br>
                 <em>Fork All</em> - custom component coding and real editor</p>
             </div>
           </section>
           <section>
             <div>
-              <h3>Praxis LIVE v3 (2017)</h3>
-              <p>Java 8, Processing 3, Syphon/Spout, Pi support, third-party libs</p>
+              <h3>PraxisLIVE v3 (2017)</h3>
+              <p>Java 8, Processing 3, GStreamer 1.x, Syphon/Spout, Pi support, third-party libs</p>
             </div>
             <div class="fragment">
-              <h3>Praxis LIVE v4 (2018)</h3>
-              <p>Praxis CORE LGPL, recode anything, bezier connections!</p>
+              <h3>PraxisLIVE v4 (2018)</h3>
+              <p>PraxisCORE LGPL, recode anything, custom data handling, <em>bezier connections!</em></p>
             </div>
           </section>
         </section>
@@ -166,7 +172,7 @@
             <h2>User code as a first class citizen</h2>
             <p class="fragment">Turtles all the way down</p>
             <p class="fragment">No scripting components, complex plugin API, etc.</p>
-            <p class="fragment">Code down to the sample</p>
+            <p class="fragment">Code down to the sample, or pixel</p>
           </section>
         </section>
 
@@ -189,26 +195,8 @@
           <section>
             <img src="assets/distributed-hubs.jpg" />
           </section>
-          <section>
-            <img src="assets/pi.jpg" />
-          </section>
         </section>
 
-        <section>
-          <h2>Praxis LIVE for Processing</h2>
-          <ul>
-            <li class="fragment">Real-time live programming</li>
-            <li class="fragment">Multiple "sketches" and pre-built components</li>
-            <li class="fragment">GStreamer 1.x video playback and capture</li>
-            <li class="fragment">Blending "fixed"</li>
-            <li class="fragment">Resource management and optimization</li>
-            <li class="fragment">Threading / distribution done right</li>
-            <li class="fragment">Professional IDE base</li>
-            <li class="fragment">Added extras (audio, GUI, OSC, MIDI, TinkerForge ...)</li>
-            <li class="fragment">Fully libre stack!</li>
-          </ul>
-        </section>
-        
         <section>
           <section>
             <h2>What might you build?</h2>
@@ -227,23 +215,150 @@
 
         <section>
           <h2>Nice things people have said</h2>
-          <p><em>Praxis LIVE is an amazing hybrid of programming and node-based. It's a great way to build friendly reusable code.</em> Howard Wong</p>
-          <p><em>Overall, speed of development with Praxis is stunning. Real-time coding FTW!</em> @y8</p>
-          <p><em>I'm a big fan of Praxis LIVE ... very fun thing to noodle with.</em> Dan Hett</p>
-          <p><em>Monumental</em> MaxD</p>
+          <p><em>PraxisLIVE is an amazing hybrid of programming and node-based. It's a great way to build friendly reusable code.</em><br>Howard Wong</p>
+          <p><em>Overall, speed of development with PraxisLIVE is stunning. Real-time coding FTW!</em> @y8</p>
+          <p><em>I'm a big fan of PraxisLIVE ... very fun thing to noodle with.</em><br>Dan Hett</p>
+          <p><em>Monumental!</em> MaxD</p>
         </section>
 
         <section>
-          <h2>Workshop</h2>
-          <p>Tomorrow, 10:30-12:30</p>
+          <section>
+            <h2>gst1-java-core</h2>
+            <p><em>Well sir, if I were you, I wouldn’t start from here</em></p>
+          </section>
+          <section>
+            <h2>GStreamer-Java</h2>
+            <p>Binding for GStreamer 0.10</p>
+            <p class="fragment">First developed by Wayne Meissner in 2007</p>
+            <p class="fragment">Various other contributors including<br>
+              Farkas Levente, Tal Shalif, David Hoyt, Andrés Colubri</p>
+            <p class="fragment">I became involved in 2013</p>
+          </section>
+          <section>
+            <h2>Based on JNA</h2>
+            <p>Java Native Access is a binding to libFFI,<br>with additional utilities</p>
+            <p class="fragment">Write all native bindings in Java</p>
+            <p class="fragment">No need for native compilation on each platform</p>
+          </section>
+          <section>
+            <pre>
+              <code data-trim class="java">
+    void g_object_set_property(GObject obj, String property, GValue data);
+    void g_object_get_property(GObject obj, String property, GValue data);
+    void g_object_set(GObject obj, String propertyName, Object... data);
+    void g_object_get(GObject obj, String propertyName, Object... data);
+    Pointer g_object_class_list_properties(Pointer oclass, IntByReference size);
+    Pointer g_object_new(GType object_type, Object... args);
+    
+    interface GClosureNotify extends Callback {
+        void callback(Pointer data, Pointer closure);
+    }
+    NativeLong g_signal_connect_data(GObject obj, String signal,
+    Callback callback, Pointer data,
+    GClosureNotify destroy_data, int connect_flags);
+              </code>
+            </pre>
+          </section>
+          <section>
+            <h2>Supporting GStreamer 1.x</h2>
+            <p>Evolution or revolution?</p>
+            <p class="fragment">Manual -> automated (headers, introspection data)</p>
+            <p class="fragment">Processing GSoC. Andrés Colubri talked about at the
+            GStreamer conference in 2015.</p>
+            <p class="fragment">Unfortunately, development stalled before these became viable</p>
+            <p class="fragment">GStreamer-Java maps GStreamer, and GLib / GObject</p>
+          </section>
+          <section>
+            <h2>The Cabinet of Luminosities (2015)</h2>
+            <img src="assets/col.jpg" />
+          </section>
+          <section>
+            <h2>gst1-java-core</h2>
+            <p>Fork of original 0.10 bindings</p>
+            <p class="fragment">Actually a fork of some initial work by Tom Greenwood</p>
+            <p class="fragment">Modularize and pare down - usage more aligned with C</p>
+            <p class="fragment">Fix memory issues, enhance performance</p>
+            <p class="fragment">Lots of contributions - Christophe Lafolet, Matthias Bläsing,
+              Isaac Raño Jares, Victor Nazarov, Ingo Randolf, and more ...
+            </p>
+          </section>
         </section>
-        
+
+        <section>
+          <section>
+            <h2>gst1-java-core <strong>0.9.3!</strong></h2>
+            <p>Is it stable? Is it useful?</p>
+            <p class="fragment">More stable and performant than the 0.10 bindings</p>
+            <p class="fragment">Fork not complete - API is not yet stable</p>
+            <p class="fragment">.. but it's being used in real things!</p>
+          </section>
+          <section>
+            <p>PraxisLIVE &amp; PraxisCORE! ;-)</p>
+          </section>
+          <section>
+            <h2>ToolsOnAir</h2>
+            <p>ReCAP - real-time content analysis with custom GStreamer elements.
+              Bindings used to facilitate analysis and extract data.</p>
+            <p>onCore (discontinued) - experimental visual automation platform.</p>
+          </section>
+          <section>
+            <h2>Kognition.ai</h2>
+            <p>Using the Java bindings to develop their smart property management /
+              security system.</p>
+            <p>Java backbone combining GStreamer, OpenCV, Tensorflow, Caffe, OpenPose,
+              Darkflow with YOLO, and more</p>
+          </section>
+          <section>
+            <h2>Kognition.ai libraries</h2>
+            <p>Open-source libraries on top of gst1-java-core, Java 8 style</p>
+            <pre><code data-trim class="java">
+try (final GstScope scope = new GstScope();) {
+  final Pipeline pipe = new BinManager()
+    .delayed("uridecodebin").with("uri", "rtsp://bla/bla/bla")
+    .scope(scope)
+    .make("videoconvert")
+    .caps("video/x-raw,format=BGR")
+    .add(new BreakoutFilter("do-something-in-java")
+      .connect((final CvRasterAndCaps rac) -> {
+        rac.raster.matAp(mat -> {
+        // do something with the Mat
+        });
+    }))
+    .make("fakesink").with("sync", true)
+    .buildPipeline();
+    
+    pipe.play();
+    Gst.main();
+}</code></pre>
+          </section>
+          <section>
+            <h2>Processing Video Library</h2>
+            <p>v2 in beta</p>
+          </section>
+          <section>
+            <p>Various others including managing video on a web server, streaming
+            between live events, an industrial product ...</p>
+          </section>
+          <section>
+            <h2>Priorities for 1.0</h2>
+            <p>Finish the fork - stable API</p>
+            <p class="fragment">Java 11 LTS - memory management, modules</p>
+            <p class="fragment">Extension API - define and register types from outside</p>
+            <p class="fragment">Version API - safer mapping of GStreamer > 1.8</p>
+            <p class="fragment">JNA - direct mapping, v5 support, and more</p>
+            <p class="fragment">Improved infrastructure, automated testing, etc.</p>
+          </section>
+        </section>
+
+
+
+
         <section>
           <h2>Thank you!</h2>
           <p>www.praxislive.org</p>
           <p>https://github.com/praxis-live/</p>
+          <p>https://github.com/gstreamer-java/</p>
           <p>https://twitter.com/PraxisLIVE</p>
-          <p>https://gitter.im/praxis-live</p>
         </section>
 
 
@@ -251,7 +366,7 @@
     </div>
 
     <footer>
-      <a href="http://www.praxislive.org"><img src="assets/praxislive.png" /></a>
+      <img src="assets/praxislive.png" />
     </footer>
 
 
@@ -261,16 +376,16 @@
     <script>
       // More info https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
-        history: true,
-        // More info https://github.com/hakimel/reveal.js#dependencies
-        dependencies: [
-          {src: 'plugin/markdown/marked.js'},
-          {src: 'plugin/markdown/markdown.js'},
-          {src: 'plugin/notes/notes.js', async: true},
-          {src: 'plugin/highlight/highlight.js', async: true, callback: function () {
-              hljs.initHighlightingOnLoad();
-            }}
-        ]
+          history: true,
+          // More info https://github.com/hakimel/reveal.js#dependencies
+          dependencies: [
+              {src: 'plugin/markdown/marked.js'},
+              {src: 'plugin/markdown/markdown.js'},
+              {src: 'plugin/notes/notes.js', async: true},
+              {src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                      hljs.initHighlightingOnLoad();
+                  }}
+          ]
       });
     </script>
   </body>
